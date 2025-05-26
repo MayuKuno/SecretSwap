@@ -1,78 +1,36 @@
-# SecretSwap
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-**SecretSwap** is a lightweight gift exchange app inspired by the idea of Secret Santa —  
-but designed for any time of year, and for any group of friends, teammates, or loved ones.
+## Getting Started
 
-It’s a simple way to create thoughtful, secret gift-giving experiences.  
-Participants join a group, get matched with someone, view their wishlist and preferences, and send messages —  
-all while keeping their identity a secret until the big reveal.
+First, run the development server:
 
-Whether it’s for a birthday, a celebration, or just a kind gesture, SecretSwap helps you surprise someone special with a meaningful gift.
-
----
-
-## Features
-
-- Secret recipient assignment within each group
-- Share wishlists and personal preferences
-- Send messages to your assigned recipient — without revealing who you are
-- Add optional delivery information for easier gift coordination
-
----
-
-## User Flow
-
-```plaintext
-/ (Home)
-- App overview
-- "Join a group" or "Create a group" buttons
-
-/join
-- Enter your nickname
-- Choose to:
-  - Create a new group (input group name → receive group code)
-  - Join an existing group (enter group code)
-
-/group/{groupId}
-- Group dashboard
-- View group status and members
-- When everyone is ready, the group creator starts the matching
-- See only your assigned recipient (others remain a secret)
-- View their wishlist and preferences
-- Send them secret messages
-
-/mypage
-- Set your own:
-  - Wishlist
-  - Preferences and hobbies
-  - Optional delivery address (shared only with your gift sender)
-````
-
----
-
-## Tech Stack
-
-| Area       | Technology                            |
-| ---------- | ------------------------------------- |
-| Frontend   | React (Next.js), TypeScript           |
-| Styling    | Tailwind CSS, shadcn/ui               |
-| API        | AWS Lambda + API Gateway              |
-| Database   | Amazon DynamoDB                       |
-| Hosting    | Amazon S3 + CloudFront                |
-| Deployment | GitHub Actions + Serverless Framework |
-
----
-
-## License
-
-MIT License
-Feel free to fork, remix, or contribute
-
----
-
-## About the Developer
-
-Created by [Mayu Kuno](https://github.com/MayuKuno)
-Portfolio: [https://ninefs-portfolio.onrender.com/](https://ninefs-portfolio.onrender.com/)
-
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
